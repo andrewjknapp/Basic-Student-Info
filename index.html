@@ -2,29 +2,68 @@
 <html>
     <head>
         <title>Student Bio</title>
+        <style>
+            h1 {
+                font-weight: normal;
+            }
+
+            .main {
+               background-color: #EFEEE7;
+               margin: 0;
+               padding: 0;
+               height: 370px;
+               width: 90vw;
+               margin: auto;
+            }
+            .topFlag {
+                text-align: center;
+                background: #333333;
+                color: white;
+                
+            }
+            .contents {
+                padding: 0px 20px 10px 20px;
+            }
+            a {
+                color: red;
+            }
+            span { 
+                vertical-align: top;
+                display: inline-block;
+                width: 50%;
+                margin-left: 20px;
+            }
+            img {
+                display: inline-block
+            }
+            #bio {
+                float: left;
+                width: 65%;
+            }
+            #contact {
+                float: right;
+                margin-right: 50px;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="font-weight:normal"><strong>Activity: </strong> Basic Student Bio</h1>
-        <hr>
-        <h2>Student Bio</h2>
-        <h3>Your Name</h3>
-        <img src="https://placehold.it/200x200" height="200px" width="200px">
-        <p>Write a short paragraph or two about yourself, or use placeholder text from <a href="www.lipsum.com">www.lipsum.com.</a></p>
-        <h3>Contact Info</h3>
-        <ul>
-            <li>
-                <strong>Email: </strong>
-                <a href="mailto:someplace@gmail.com" target="_top">someplace@gmail.com</a>
-            </li>
-            <li>
-                <strong>Github: </strong>
-                <a href="https://github.com/SampleName">Sample Name</a>
-            </li>
-            <li>
-                <strong>Portfolio: </strong>
-                <a href="#">Coming Soon</a>
-            </li>
-        </ul>
-        <hr>
+        <div class="main">
+            <h2 class="topFlag">Student Bio</h2>
+            <div class="contents">
+                <div id="bio">
+                    <h3>Your Name</h3>
+                    <img src="https://placehold.it/200x200" height="200px" width="200px">    
+                    <span>Write a short paragraph or two about yourself, or use placeholder text from <a href="www.lipsum.com">www.lipsum.com.</a></span>
+                </div>
+                <div id="contact">
+                    <h3>Contact Info</h3>
+                    <ul>
+                        <li><strong>Email: </strong><a href="#" target="_top">someplace@gmail.com</a></li>
+                        <li><strong>Github: </strong><a href="#">Sample Name</a></li>
+                        <li><strong>Portfolio: </strong><a href="#">Coming Soon</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
